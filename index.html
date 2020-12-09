@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+
+  
+    <title>Login page</title>
+
+   
+</head>
+<link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="logstyle.css">
+<link rel="stylesheet" href="va.js">
+<script src="loggscr.js"></script>
+<link rel="stylesheet" href="style.css">
+
+
+<script type="text/javascript">
+  function display(form){
+  if (form.username.value=="admin") { 
+      if (form.password.value=="12345") {              
+       
+        // location='index1.html',true;
+        window.open("home.html");
+        
+                        } else {
+                            alert("Invalid Password")
+                            }
+                  } else {  alert("Invalid Username")
+                      }
+           
+              }
+             
+              
+        </script>	
+
+
+
+
+
+<body>
+    <div class="chk">
+    <body background="loggg.png">
+        </div>
+ 
+
+    <nav class="navbar navbar-expand-lg navbar-light badge-danger">
+        <a class="navbar-brand" href="#">Shajeeh's Page</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+      
+            
+            
+           
+          </ul>
+        </div>
+      </nav>
+
+      <div class="log">
+
+        <!-- <form style="border:1px solid black " > -->
+         
+        
+            
+    
+        
+      <form class="form-contain">
+
+        
+        
+       
+        <div class="form-group">
+            
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="text" name = "username"class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+
+        <style>
+          #frmCheckPassword {
+         
+              background: #ffffff;
+              /* padding: 10px; */
+
+          }
+
+          .demoInputBox {
+              padding: 7px;
+              border: #f0f0f0 1px solid;
+              border-radius: 4px;
+              padding-right: 3.5cm;
+          }
+
+          #password-strength-status {
+              padding: 5px 10px;
+              color: #FFFFFF;
+              border-radius: 4px;
+              margin-top: 5px;
+          }
+
+          .medium-password {
+              background-color: #b7d60a;
+              border: #BBB418 1px solid;
+          }
+
+          .weak-password {
+              background-color: #ce1d14;
+              border: #AA4502 1px solid;
+          }
+
+          .strong-password {
+              background-color: #12CC1A;
+              border: #0FA015 1px solid;
+          }
+      </style>
+  </head>
+
+
+  <label>Password</label>
+  <div name="frmCheckPassword" id="frmCheckPassword">
+      
+      <input type="password" name="password" id="password" class="demoInputBox" onKeyUp="checkPasswordStrength();" required>
+      <div id="password-strength-status"></div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        
+     
+        <button type="submit" class="btn btn-primary" onClick="display(this.form)"  >submit</button>
+      </form>
+
+    
+      
+
+</body>
+</html>
+<!-- 
+developed by :
+shajeeh bin mohammed
+9995666053 -->
